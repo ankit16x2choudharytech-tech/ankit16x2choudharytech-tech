@@ -1,8 +1,8 @@
- <div align="center">
+<div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:020617,50:0F172A,100:06B6D4&text=ANKIT%20CHOUDHARY&fontSize=48&fontColor=38BDF8&fontAlignY=38&desc=CODE%20%E2%80%A2%20BUILD%20%E2%80%A2%20SOLVE%20%E2%80%A2%20REPEAT&descAlignY=60&descSize=17" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=23&duration=2200&pause=700&color=22D3EE&center=true&vCenter=true&width=850&lines=%3E+Initializing+Ankit's+Developer+Profile...;%3E+Computer+Science+Student;%3E+C%2B%2B+%7C+DSA+%7C+Web+Development;%3E+LeetCode+Problem+Solver;%3E+Building+Ideas+Into+Reality...;%3E+System+Ready+%E2%9C%93" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=23&duration=2200&pause=700&color=22D3EE&center=true&vCenter=true&width=850&lines=%3E+Initializing+Ankit's+Developer+Profile...;%3E+Computer+Science+Student;%3E+C%2B%2B+%7C+DSA+%7C+Web+Development;%3E+LeetCode+Problem+Solver;%3E+Building+Ideas+Into+Reality...;%3E+System+Ready+%E2%9C%93"/>
 
 <br/>
 
@@ -12,21 +12,21 @@
 
 ---
 
-## `> whoami`
+# 👋 About Me
 
 <div align="center">
 
 <table>
 <tr>
 
-<td width="65%" valign="middle">
+<td width="62%" valign="middle">
 
-<h1>👋 Hi, I'm Ankit Choudhary</h1>
+<h2>Hi, I'm Ankit Choudhary 👋</h2>
 
 <p>
-<b>🎓 Computer Science Student</b>
+🎓 <b>Computer Science Student</b>
 &nbsp; • &nbsp;
-<b>💻 Developer</b>
+💻 <b>Developer</b>
 </p>
 
 <p>
@@ -48,20 +48,20 @@ and continuously improving my development skills.
 
 </td>
 
-<td width="35%" align="center">
+<td width="38%" align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2200&pause=800&color=22D3EE&center=true&vCenter=true&width=300&height=110&lines=DSA+Enthusiast;Web+Developer;Problem+Solver;Project+Builder" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2200&pause=800&color=22D3EE&center=true&vCenter=true&width=300&height=110&lines=DSA+Enthusiast;Web+Developer;Problem+Solver;Project+Builder"/>
 
-<br>
+<br/><br/>
 
-<img src="https://img.shields.io/badge/●%20AVAILABLE%20TO%20BUILD-22C55E?style=for-the-badge&labelColor=0F172A"/>
+<img src="https://img.shields.io/badge/%E2%97%8F%20AVAILABLE%20TO%20BUILD-22C55E?style=for-the-badge&labelColor=0F172A"/>
 
 </td>
 
 </tr>
 </table>
 
-<br>
+<br/>
 
 <table>
 <tr>
@@ -73,8 +73,9 @@ and continuously improving my development skills.
 <h3>Data Structures</h3>
 
 <sub>
-Arrays • Strings<br>
-Trees • Graphs • Algorithms
+Arrays • Strings<br/>
+Linked Lists • Trees<br/>
+Algorithms • Problem Solving
 </sub>
 
 </td>
@@ -86,8 +87,9 @@ Trees • Graphs • Algorithms
 <h3>Development</h3>
 
 <sub>
-Frontend • Backend<br>
-APIs • Databases
+Frontend • Backend<br/>
+APIs • Databases<br/>
+Full Stack
 </sub>
 
 </td>
@@ -99,8 +101,8 @@ APIs • Databases
 <h3>Current Mission</h3>
 
 <sub>
-Master DSA<br>
-Build Real-World Apps
+Master DSA<br/>
+Build Real-World Applications
 </sub>
 
 </td>
@@ -108,85 +110,215 @@ Build Real-World Apps
 </tr>
 </table>
 
-<br>
+<br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=2500&pause=900&color=38BDF8&center=true&vCenter=true&width=700&lines=%3E+Learning...;%3E+Building...;%3E+Solving+Problems...;%3E+Improving+Every+Day...;%3E+System+Ready+%E2%9C%93" />
-
-</div>
-
-
-## `> ./about-me`
-
-```cpp
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
-class Ankit {
-
-public:
-
-    string role = "Computer Science Student";
-
-    vector<string> interests = {
-        "Data Structures & Algorithms",
-        "Problem Solving",
-        "Web Development",
-        "Software Development"
-    };
-
-    vector<string> languages = {
-        "C++",
-        "JavaScript",
-        "Python"
-    };
-
-    string current_focus =
-        "DSA + Full Stack Development";
-
-    string philosophy =
-        "Consistency beats motivation.";
-
-};
-```
-
----
-
-## `> system_status`
-
-<div align="center">
-
-| SYSTEM         | STATUS      |
-| -------------- | ----------- |
-| 🧠 DSA         | 🟢 ACTIVE   |
-| 💻 Development | 🟢 ACTIVE   |
-| 🚀 Projects    | 🟢 BUILDING |
-| 📚 Learning    | 🟢 ALWAYS   |
-| 🐛 Bugs        | 🔴 TOO MANY |
-| ☕ Coffee       | 🟢 REQUIRED |
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=2500&pause=900&color=38BDF8&center=true&vCenter=true&width=700&lines=%3E+Learning...;%3E+Building...;%3E+Solving+Problems...;%3E+Improving+Every+Day...;%3E+System+Ready+%E2%9C%93"/>
 
 </div>
 
 ---
 
-## `> tech_stack`
+# 💻 Developer Profile
 
 <div align="center">
 
-### Languages
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+### 🎯 Current Focus
+
+<img src="https://img.shields.io/badge/DSA-ACTIVE-22C55E?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/FULL%20STACK-ACTIVE-06B6D4?style=for-the-badge"/>
+
+<br/><br/>
+
+- 🧠 Data Structures & Algorithms
+- 💻 C++ Problem Solving
+- 🌐 Full Stack Development
+- 🚀 Real-World Applications
+- 📚 Continuous Learning
+
+</td>
+
+<td width="50%" valign="top">
+
+### 💡 Philosophy
+
+<div align="center">
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&size=22&duration=3500&pause=1200&color=38BDF8&center=true&vCenter=true&width=400&lines=Consistency+beats+motivation.;Build.+Break.+Fix.+Repeat.;Keep+Learning.+Keep+Building."/>
+
+<br/><br/>
+
+</div>
+
+</td>
+
+</tr>
+</table>
+
+</div>
+
+---
+
+# ⚡ What I Do
+
+<div align="center">
+
+<table>
+<tr>
+
+<td align="center" width="33%">
+
+<h1>🧠</h1>
+
+<h3>DSA & Problem Solving</h3>
+
+<p>
+Algorithms<br/>
+Data Structures<br/>
+Competitive Problem Solving<br/>
+LeetCode
+</p>
+
+</td>
+
+<td align="center" width="33%">
+
+<h1>💻</h1>
+
+<h3>Web Development</h3>
+
+<p>
+Frontend<br/>
+Backend<br/>
+REST APIs<br/>
+Database Integration
+</p>
+
+</td>
+
+<td align="center" width="33%">
+
+<h1>🚀</h1>
+
+<h3>Project Building</h3>
+
+<p>
+Real World Applications<br/>
+SaaS Ideas<br/>
+Experiments<br/>
+Deployment
+</p>
+
+</td>
+
+</tr>
+</table>
+
+</div>
+
+---
+
+# 📊 System Status
+
+<div align="center">
+
+<table>
+<tr>
+
+<td align="center" width="16%">
+
+<h2>🧠</h2>
+<b>DSA</b>
+<br/>
+<img src="https://img.shields.io/badge/ACTIVE-22C55E?style=flat-square"/>
+
+</td>
+
+<td align="center" width="16%">
+
+<h2>💻</h2>
+<b>Development</b>
+<br/>
+<img src="https://img.shields.io/badge/ACTIVE-22C55E?style=flat-square"/>
+
+</td>
+
+<td align="center" width="16%">
+
+<h2>🚀</h2>
+<b>Projects</b>
+<br/>
+<img src="https://img.shields.io/badge/BUILDING-06B6D4?style=flat-square"/>
+
+</td>
+
+<td align="center" width="16%">
+
+<h2>📚</h2>
+<b>Learning</b>
+<br/>
+<img src="https://img.shields.io/badge/ALWAYS-8B5CF6?style=flat-square"/>
+
+</td>
+
+<td align="center" width="16%">
+
+<h2>🐛</h2>
+<b>Bugs</b>
+<br/>
+<img src="https://img.shields.io/badge/TOO_MANY-EF4444?style=flat-square"/>
+
+</td>
+
+<td align="center" width="16%">
+
+<h2>☕</h2>
+<b>Coffee</b>
+<br/>
+<img src="https://img.shields.io/badge/REQUIRED-F59E0B?style=flat-square"/>
+
+</td>
+
+</tr>
+</table>
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=2200&pause=700&color=22C55E&center=true&vCenter=true&width=700&lines=%5BOK%5D+DSA+engine+running;%5BOK%5D+Development+environment+ready;%5BOK%5D+Projects+in+progress;%5BWARN%5D+Too+many+bugs+detected;%5BINFO%5D+Coffee+level%3A+REQUIRED"/>
+
+</div>
+
+---
+
+# 🛠️ Tech Stack
+
+<div align="center">
+
+### 👨‍💻 Languages
 
 <img src="https://skillicons.dev/icons?i=cpp,c,js,python&theme=dark"/>
 
-### Frontend
+<br/><br/>
+
+### 🎨 Frontend
 
 <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind&theme=dark"/>
 
-### Backend & Database
+<br/><br/>
+
+### ⚙️ Backend & Database
 
 <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase&theme=dark"/>
 
-### Tools & Platforms
+<br/><br/>
+
+### 🔧 Tools & Platforms
 
 <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,npm&theme=dark"/>
 
@@ -194,28 +326,53 @@ public:
 
 ---
 
-## `> dsa.exe`
+# 🧠 DSA Progress
 
-```text
-             DATA STRUCTURES & ALGORITHMS
+<div align="center">
 
-Arrays              ████████████████████ 100%
-Strings             █████████████████░░░  85%
-Linked Lists        ███████████████░░░░░  75%
-Stack / Queue       ███████████████░░░░░  75%
-Hashing             ██████████████░░░░░░  70%
-Binary Search       █████████████░░░░░░░  65%
-Recursion           ████████████░░░░░░░░  60%
-Trees               ██████████░░░░░░░░░░  50%
-Graphs              ████████░░░░░░░░░░░░  40%
-Dynamic Programming ██████░░░░░░░░░░░░░░  30%
-```
+<table>
+<tr>
 
-> These percentages represent my current learning focus, not official statistics.
+<td width="50%" valign="top">
+
+### 📚 Core Data Structures
+
+| Topic | Focus |
+|---|---|
+| Arrays | 🟢 Advanced |
+| Strings | 🟢 Strong |
+| Linked Lists | 🟡 Learning |
+| Stack / Queue | 🟡 Learning |
+| Hashing | 🟡 Learning |
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🔬 Advanced Topics
+
+| Topic | Focus |
+|---|---|
+| Binary Search | 🟡 Learning |
+| Recursion | 🟡 Learning |
+| Trees | 🟠 Exploring |
+| Graphs | 🟠 Exploring |
+| Dynamic Programming | 🔵 Future |
+
+</td>
+
+</tr>
+</table>
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=2400&pause=800&color=22D3EE&center=true&vCenter=true&width=700&lines=Think+%E2%86%92+Code+%E2%86%92+Debug+%E2%86%92+Optimize;One+Problem+At+A+Time+%F0%9F%A7%A0;DSA+Journey+In+Progress..."/>
+
+</div>
 
 ---
 
-## `> leetcode`
+# 🟠 LeetCode
 
 <div align="center">
 
@@ -227,38 +384,73 @@ Dynamic Programming ██████░░░░░░░░░░░░░░
 
 <br/><br/>
 
-```text
-              LEETCODE → GITHUB PIPELINE
+<table>
+<tr>
 
-              ┌───────────────┐
-              │    LEETCODE   │
-              └───────┬───────┘
-                      │
-                   SUBMIT
-                      │
-                      ▼
-              ┌───────────────┐
-              │   SOLUTION    │
-              └───────┬───────┘
-                      │
-                   SYNC
-                      │
-                      ▼
-              ┌───────────────┐
-              │    GITHUB     │
-              └───────┬───────┘
-                      │
-                      ▼
-                 DSA JOURNEY 🚀
-```
+<td align="center" width="25%">
 
-My LeetCode solutions are automatically synced to GitHub.
+<h2>🧩</h2>
+
+<b>PROBLEM</b>
+
+<br/>
+
+Solving
+
+</td>
+
+<td align="center" width="25%">
+
+<h2>💡</h2>
+
+<b>APPROACH</b>
+
+<br/>
+
+Think
+
+</td>
+
+<td align="center" width="25%">
+
+<h2>⚡</h2>
+
+<b>OPTIMIZE</b>
+
+<br/>
+
+Improve
+
+</td>
+
+<td align="center" width="25%">
+
+<h2>🚀</h2>
+
+<b>SYNC</b>
+
+<br/>
+
+GitHub
+
+</td>
+
+</tr>
+</table>
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=2500&pause=900&color=FFA116&center=true&vCenter=true&width=750&lines=LeetCode+%E2%86%92+Submit+%E2%86%92+Sync+%E2%86%92+GitHub;Every+Accepted+Solution+%3D+One+Step+Forward;%F0%9F%A7%A0+Keep+Solving"/>
+
+<br/><br/>
+
+<b>My LeetCode solutions are automatically synced to GitHub.</b>
 
 </div>
 
 ---
 
-## `> github_stats`
+# 📈 GitHub Analytics
 
 <div align="center">
 
@@ -274,7 +466,7 @@ My LeetCode solutions are automatically synced to GitHub.
 
 ---
 
-## `> github_trophies`
+# 🏆 GitHub Trophies
 
 <div align="center">
 
@@ -284,7 +476,7 @@ My LeetCode solutions are automatically synced to GitHub.
 
 ---
 
-## `> contribution_matrix`
+# 📊 Contribution Activity
 
 <div align="center">
 
@@ -294,7 +486,7 @@ My LeetCode solutions are automatically synced to GitHub.
 
 ---
 
-## `> snake_protocol`
+# 🐍 Contribution Snake
 
 <div align="center">
 
@@ -304,18 +496,14 @@ My LeetCode solutions are automatically synced to GitHub.
 
 ---
 
-## 🚀 Featured Projects
+# 🚀 Featured Projects
 
 <div align="center">
 
 <table>
 <tr>
 
-<!-- SMART EDU -->
-
 <td width="50%" valign="top">
-
-<div align="center">
 
 <a href="YOUR_PROJECT_1_URL">
 
@@ -323,38 +511,32 @@ My LeetCode solutions are automatically synced to GitHub.
 
 </a>
 
-<br>
+<h2 align="center">🎓 Smart Edu</h2>
 
-<h2>🎓 Smart Edu</h2>
-
-<p>
+<p align="center">
 <b>Modern Digital Learning Platform</b>
 </p>
 
-<p>
-A platform designed for online learning,
-courses, authentication and digital education.
+<p align="center">
+Online learning platform focused on courses,
+authentication and digital education.
 </p>
 
-<br>
+<div align="center">
 
-<img src="https://skillicons.dev/icons?i=nextjs,firebase,react,tailwind&theme=dark" height="40"/>
+<img src="https://skillicons.dev/icons?i=nextjs,react,firebase,tailwind&theme=dark"/>
 
-<br><br>
+<br/><br/>
 
 <a href="YOUR_PROJECT_1_URL">
-<img src="https://img.shields.io/badge/VIEW%20PROJECT-06B6D4?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/VIEW_PROJECT-06B6D4?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </div>
 
 </td>
 
-<!-- SMART SAVE -->
-
 <td width="50%" valign="top">
-
-<div align="center">
 
 <a href="YOUR_PROJECT_2_URL">
 
@@ -362,27 +544,25 @@ courses, authentication and digital education.
 
 </a>
 
-<br>
+<h2 align="center">💳 Smart Save</h2>
 
-<h2>💳 Smart Save</h2>
-
-<p>
+<p align="center">
 <b>Digital Payment & Services Platform</b>
 </p>
 
-<p>
+<p align="center">
 A platform for online payments,
 digital services and business solutions.
 </p>
 
-<br>
+<div align="center">
 
-<img src="https://skillicons.dev/icons?i=nextjs,nodejs,express,mongodb&theme=dark" height="40"/>
+<img src="https://skillicons.dev/icons?i=nextjs,nodejs,express,mongodb&theme=dark"/>
 
-<br><br>
+<br/><br/>
 
 <a href="YOUR_PROJECT_2_URL">
-<img src="https://img.shields.io/badge/VIEW%20PROJECT-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/VIEW_PROJECT-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </div>
@@ -393,11 +573,7 @@ digital services and business solutions.
 
 <tr>
 
-<!-- SMART TRANSPORT -->
-
 <td width="50%" valign="top">
-
-<div align="center">
 
 <a href="YOUR_PROJECT_3_URL">
 
@@ -405,38 +581,32 @@ digital services and business solutions.
 
 </a>
 
-<br>
+<h2 align="center">🚍 Smart Transport</h2>
 
-<h2>🚍 Smart Transport</h2>
-
-<p>
+<p align="center">
 <b>Smart Mobility & Bus Booking</b>
 </p>
 
-<p>
-A smart transportation concept connecting
+<p align="center">
+Smart transportation concept connecting
 buses, autos, bikes and journey planning.
 </p>
 
-<br>
+<div align="center">
 
-<img src="https://skillicons.dev/icons?i=react,nodejs,firebase,js&theme=dark" height="40"/>
+<img src="https://skillicons.dev/icons?i=react,nodejs,firebase,js&theme=dark"/>
 
-<br><br>
+<br/><br/>
 
 <a href="YOUR_PROJECT_3_URL">
-<img src="https://img.shields.io/badge/VIEW%20PROJECT-22C55E?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/VIEW_PROJECT-22C55E?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </div>
 
 </td>
 
-<!-- LEETCODE -->
-
 <td width="50%" valign="top">
-
-<div align="center">
 
 <a href="YOUR_PROJECT_4_URL">
 
@@ -444,27 +614,25 @@ buses, autos, bikes and journey planning.
 
 </a>
 
-<br>
+<h2 align="center">🧠 LeetCode Solutions</h2>
 
-<h2>🧠 LeetCode Solutions</h2>
-
-<p>
+<p align="center">
 <b>Data Structures & Algorithms</b>
 </p>
 
-<p>
-My coding journey containing LeetCode
-solutions automatically synced to GitHub.
+<p align="center">
+My DSA journey with solutions automatically
+synced from LeetCode to GitHub.
 </p>
 
-<br>
+<div align="center">
 
-<img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="40"/>
+<img src="https://skillicons.dev/icons?i=cpp&theme=dark"/>
 
-<br><br>
+<br/><br/>
 
 <a href="YOUR_PROJECT_4_URL">
-<img src="https://img.shields.io/badge/VIEW%20SOLUTIONS-3B82F6?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/VIEW_SOLUTIONS-3B82F6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </div>
@@ -474,103 +642,142 @@ solutions automatically synced to GitHub.
 </tr>
 </table>
 
-<br>
+<br/>
 
----
-
-### ✨ More Projects Coming Soon
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1000&color=22D3EE&center=true&vCenter=true&width=750&lines=Designing+%E2%86%92+Developing+%E2%86%92+Testing+%E2%86%92+Deploying;Turning+Ideas+Into+Real+Products+%F0%9F%9A%80;More+Projects+Loading...+%E2%8F%B3" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1000&color=22D3EE&center=true&vCenter=true&width=750&lines=Designing+%E2%86%92+Developing+%E2%86%92+Testing+%E2%86%92+Deploying;Turning+Ideas+Into+Real+Products+%F0%9F%9A%80;More+Projects+Coming+Soon..."/>
 
 </div>
 
-
-### 🚀 What I'm Building
-
-```text
-┌─────────────────────────────────────────────────────┐
-│                                                     │
-│  🧠 DSA                                             │
-│     └─ LeetCode + Problem Solving                   │
-│                                                     │
-│  🌐 WEB DEVELOPMENT                                  │
-│     └─ Full Stack Applications                      │
-│                                                     │
-│  🚀 REAL WORLD PROJECTS                              │
-│     └─ Building • Testing • Deploying               │
-│                                                     │
-│  🔬 FUTURE                                           │
-│     └─ Open Source + Advanced Systems               │
-│                                                     │
-└─────────────────────────────────────────────────────┘
-```
-
 ---
 
-## `> 2026.exe`
+# 🎯 2026 Goals
 
 <div align="center">
 
-```text
-╔══════════════════════════════════════════════════╗
-║              2026 DEVELOPMENT PLAN               ║
-╠══════════════════════════════════════════════════╣
-║                                                  ║
-║  [✓] Improve C++                                  ║
-║  [✓] Practice Arrays & Strings                    ║
-║  [ ] Master Advanced DSA                          ║
-║  [ ] Solve More LeetCode Problems                 ║
-║  [ ] Build Production-Level Projects              ║
-║  [ ] Contribute to Open Source                    ║
-║  [ ] Become a Better Software Developer           ║
-║                                                  ║
-╚══════════════════════════════════════════════════╝
-```
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+### 🧠 Learning
+
+- ✅ Improve C++
+- ✅ Practice Arrays & Strings
+- 🔄 Master Advanced DSA
+- 🔄 Solve More LeetCode Problems
+- ⏳ Learn Advanced Algorithms
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🚀 Building
+
+- 🔄 Production-Level Projects
+- 🔄 Full Stack Applications
+- ⏳ Open Source Contributions
+- ⏳ Advanced SaaS Projects
+- ⏳ Build Something Impactful
+
+</td>
+
+</tr>
+</table>
 
 </div>
 
 ---
 
-## `> developer_terminal`
+# 💻 Developer Dashboard
 
-```text
-┌──────────────────────────────────────────────────────┐
-│ TERMINAL                                             │
-├──────────────────────────────────────────────────────┤
-│                                                      │
-│ ankit@github:~$ neofetch                             │
-│                                                      │
-│ OS          : Developer Mode                         │
-│ Shell       : C++ / JavaScript                       │
-│ Editor      : VS Code                                │
-│ Database    : MongoDB / Firebase                     │
-│ Frontend    : React / Next.js                        │
-│ Backend     : Node.js / Express                      │
-│ Current     : DSA + Full Stack                       │
-│ Status      : 🟢 Building                            │
-│                                                      │
-│ ankit@github:~$ echo "Never Stop Learning"           │
-│ Never Stop Learning 🚀                               │
-│                                                      │
-└──────────────────────────────────────────────────────┘
-```
+<div align="center">
+
+<table>
+<tr>
+
+<td align="center" width="25%">
+
+<h2>🧠</h2>
+
+<b>DSA</b>
+
+<br/>
+
+<img src="https://img.shields.io/badge/LEARNING-06B6D4?style=flat-square"/>
+
+</td>
+
+<td align="center" width="25%">
+
+<h2>🌐</h2>
+
+<b>WEB</b>
+
+<br/>
+
+<img src="https://img.shields.io/badge/BUILDING-8B5CF6?style=flat-square"/>
+
+</td>
+
+<td align="center" width="25%">
+
+<h2>🚀</h2>
+
+<b>PROJECTS</b>
+
+<br/>
+
+<img src="https://img.shields.io/badge/ACTIVE-22C55E?style=flat-square"/>
+
+</td>
+
+<td align="center" width="25%">
+
+<h2>📚</h2>
+
+<b>LEARNING</b>
+
+<br/>
+
+<img src="https://img.shields.io/badge/CONTINUOUS-F59E0B?style=flat-square"/>
+
+</td>
+
+</tr>
+</table>
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=2200&pause=700&color=38BDF8&center=true&vCenter=true&width=700&lines=Building+Today+%E2%86%92+Better+Tomorrow;%3E+Code;%3E+Learn;%3E+Build;%3E+Repeat"/>
+
+</div>
 
 ---
 
-## `> connect`
+# 📬 Connect With Me
 
 <div align="center">
 
 <a href="https://github.com/ankit16x2choudharytech-tech">
+
 <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"/>
+
 </a>
+
+&nbsp;
 
 <a href="https://leetcode.com/">
+
 <img src="https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
+
 </a>
 
+&nbsp;
+
 <a href="https://www.linkedin.com/">
+
 <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+
 </a>
 
 </div>
@@ -579,14 +786,14 @@ solutions automatically synced to GitHub.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=22D3EE&center=true&vCenter=true&width=750&lines=Code+%E2%86%92+Debug+%E2%86%92+Optimize+%E2%86%92+Repeat;Every+Bug+Is+a+Lesson;%3E+Never+Stop+Learning;%3E+Never+Stop+Building;%3E+Keep+Going+%F0%9F%9A%80"/>
-
-<br/>
-
-**⭐ Thanks for visiting my profile!**
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2400&pause=1000&color=22D3EE&center=true&vCenter=true&width=750&lines=Code+%E2%86%92+Debug+%E2%86%92+Optimize+%E2%86%92+Repeat;Every+Bug+Is+a+Lesson;%3E+Never+Stop+Learning;%3E+Never+Stop+Building;%3E+Keep+Going+%F0%9F%9A%80"/>
 
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:0F172A,100:06B6D4&height=130&section=footer"/>
+
+<br/>
+
+⭐ <b>Thanks for visiting my profile!</b>
 
 </div>
