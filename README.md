@@ -225,17 +225,186 @@ My LeetCode solutions are automatically synced to GitHub.
 
 ---
 
-## `> projects`
+## 🚀 Featured Projects
 
 <div align="center">
 
-<a href="https://github.com/ankit16x2choudharytech-tech?tab=repositories">
+<table>
+<tr>
 
-<img src="https://img.shields.io/badge/VIEW%20ALL%20PROJECTS-06B6D4?style=for-the-badge&logo=github&logoColor=white"/>
+<!-- SMART EDU -->
+
+<td width="50%" valign="top">
+
+<div align="center">
+
+<a href="YOUR_PROJECT_1_URL">
+
+<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,40:172554,75:2563EB,100:06B6D4&text=SMART%20EDU&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=Education%20%2F%20Learning%20Platform&descAlignY=67&descSize=14" width="100%"/>
 
 </a>
 
+<br>
+
+<h2>🎓 Smart Edu</h2>
+
+<p>
+<b>Modern Digital Learning Platform</b>
+</p>
+
+<p>
+A platform designed for online learning,
+courses, authentication and digital education.
+</p>
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=nextjs,firebase,react,tailwind&theme=dark" height="40"/>
+
+<br><br>
+
+<a href="YOUR_PROJECT_1_URL">
+<img src="https://img.shields.io/badge/VIEW%20PROJECT-06B6D4?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
 </div>
+
+</td>
+
+<!-- SMART SAVE -->
+
+<td width="50%" valign="top">
+
+<div align="center">
+
+<a href="YOUR_PROJECT_2_URL">
+
+<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,40:312E81,75:7C3AED,100:EC4899&text=SMART%20SAVE&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=Payment%20%2F%20Digital%20Services&descAlignY=67&descSize=14" width="100%"/>
+
+</a>
+
+<br>
+
+<h2>💳 Smart Save</h2>
+
+<p>
+<b>Digital Payment & Services Platform</b>
+</p>
+
+<p>
+A platform for online payments,
+digital services and business solutions.
+</p>
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=nextjs,nodejs,express,mongodb&theme=dark" height="40"/>
+
+<br><br>
+
+<a href="YOUR_PROJECT_2_URL">
+<img src="https://img.shields.io/badge/VIEW%20PROJECT-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<!-- SMART TRANSPORT -->
+
+<td width="50%" valign="top">
+
+<div align="center">
+
+<a href="YOUR_PROJECT_3_URL">
+
+<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:022C22,40:064E3B,75:059669,100:22C55E&text=SMART%20TRANSPORT&fontSize=29&fontColor=FFFFFF&fontAlignY=40&desc=Smart%20Mobility%20Platform&descAlignY=67&descSize=14" width="100%"/>
+
+</a>
+
+<br>
+
+<h2>🚍 Smart Transport</h2>
+
+<p>
+<b>Smart Mobility & Bus Booking</b>
+</p>
+
+<p>
+A smart transportation concept connecting
+buses, autos, bikes and journey planning.
+</p>
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=react,nodejs,firebase,js&theme=dark" height="40"/>
+
+<br><br>
+
+<a href="YOUR_PROJECT_3_URL">
+<img src="https://img.shields.io/badge/VIEW%20PROJECT-22C55E?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+</div>
+
+</td>
+
+<!-- LEETCODE -->
+
+<td width="50%" valign="top">
+
+<div align="center">
+
+<a href="YOUR_PROJECT_4_URL">
+
+<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,40:172554,75:1D4ED8,100:38BDF8&text=LEETCODE&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=DSA%20%2F%20Problem%20Solving&descAlignY=67&descSize=14" width="100%"/>
+
+</a>
+
+<br>
+
+<h2>🧠 LeetCode Solutions</h2>
+
+<p>
+<b>Data Structures & Algorithms</b>
+</p>
+
+<p>
+My coding journey containing LeetCode
+solutions automatically synced to GitHub.
+</p>
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="40"/>
+
+<br><br>
+
+<a href="YOUR_PROJECT_4_URL">
+<img src="https://img.shields.io/badge/VIEW%20SOLUTIONS-3B82F6?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+</div>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+---
+
+### ✨ More Projects Coming Soon
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1000&color=22D3EE&center=true&vCenter=true&width=750&lines=Designing+%E2%86%92+Developing+%E2%86%92+Testing+%E2%86%92+Deploying;Turning+Ideas+Into+Real+Products+%F0%9F%9A%80;More+Projects+Loading...+%E2%8F%B3" />
+
+</div>
+
 
 ### 🚀 What I'm Building
 
