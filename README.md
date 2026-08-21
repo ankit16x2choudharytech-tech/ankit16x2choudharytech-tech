@@ -14,27 +14,106 @@
 
 ## `> whoami`
 
-```text
-╭──────────────────────────────────────────────────────────╮
-│                                                          │
-│   👋 ANKIT CHOUDHARY                                    │
-│                                                          │
-│   🎓 Computer Science Student                            │
-│   💻 Developer                                           │
-│   🧠 DSA Enthusiast                                     │
-│   🚀 Project Builder                                    │
-│                                                          │
-│   ┌──────────────────────────────────────────────────┐   │
-│   │ CURRENT MISSION                                  │   │
-│   │                                                  │   │
-│   │ Master DSA + Build Real World Applications      │   │
-│   │                                                  │   │
-│   └──────────────────────────────────────────────────┘   │
-│                                                          │
-╰──────────────────────────────────────────────────────────╯
-```
+<div align="center">
 
----
+<table>
+<tr>
+
+<td width="65%" valign="middle">
+
+<h1>👋 Hi, I'm Ankit Choudhary</h1>
+
+<p>
+<b>🎓 Computer Science Student</b>
+&nbsp; • &nbsp;
+<b>💻 Developer</b>
+</p>
+
+<p>
+🧠 <b>DSA Enthusiast</b>
+&nbsp; • &nbsp;
+🚀 <b>Project Builder</b>
+</p>
+
+<br>
+
+<p>
+I enjoy solving problems, building real-world applications,
+and continuously improving my development skills.
+</p>
+
+<br>
+
+<img src="https://img.shields.io/badge/FOCUS-DSA%20%2B%20FULL%20STACK-06B6D4?style=for-the-badge"/>
+
+</td>
+
+<td width="35%" align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2200&pause=800&color=22D3EE&center=true&vCenter=true&width=300&height=110&lines=DSA+Enthusiast;Web+Developer;Problem+Solver;Project+Builder" />
+
+<br>
+
+<img src="https://img.shields.io/badge/●%20AVAILABLE%20TO%20BUILD-22C55E?style=for-the-badge&labelColor=0F172A"/>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+
+<td align="center" width="33%">
+
+<h2>🧠</h2>
+
+<h3>Data Structures</h3>
+
+<sub>
+Arrays • Strings<br>
+Trees • Graphs • Algorithms
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<h2>💻</h2>
+
+<h3>Development</h3>
+
+<sub>
+Frontend • Backend<br>
+APIs • Databases
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<h2>🚀</h2>
+
+<h3>Current Mission</h3>
+
+<sub>
+Master DSA<br>
+Build Real-World Apps
+</sub>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=2500&pause=900&color=38BDF8&center=true&vCenter=true&width=700&lines=%3E+Learning...;%3E+Building...;%3E+Solving+Problems...;%3E+Improving+Every+Day...;%3E+System+Ready+%E2%9C%93" />
+
+</div>
+
 
 ## `> ./about-me`
 
