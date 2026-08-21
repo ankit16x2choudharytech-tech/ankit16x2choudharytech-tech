@@ -324,53 +324,7 @@ Deployment
 
 </div>
 
----
 
-# 🧠 DSA Progress
-
-<div align="center">
-
-<table>
-<tr>
-
-<td width="50%" valign="top">
-
-### 📚 Core Data Structures
-
-| Topic | Focus |
-|---|---|
-| Arrays | 🟢 Advanced |
-| Strings | 🟢 Strong |
-| Linked Lists | 🟡 Learning |
-| Stack / Queue | 🟡 Learning |
-| Hashing | 🟡 Learning |
-
-</td>
-
-<td width="50%" valign="top">
-
-### 🔬 Advanced Topics
-
-| Topic | Focus |
-|---|---|
-| Binary Search | 🟡 Learning |
-| Recursion | 🟡 Learning |
-| Trees | 🟠 Exploring |
-| Graphs | 🟠 Exploring |
-| Dynamic Programming | 🔵 Future |
-
-</td>
-
-</tr>
-</table>
-
-<br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=2400&pause=800&color=22D3EE&center=true&vCenter=true&width=700&lines=Think+%E2%86%92+Code+%E2%86%92+Debug+%E2%86%92+Optimize;One+Problem+At+A+Time+%F0%9F%A7%A0;DSA+Journey+In+Progress..."/>
-
-</div>
-
----
 
 # 🟠 LeetCode
 
