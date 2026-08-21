@@ -302,7 +302,7 @@ Deployment
 
 ### 👨‍💻 Languages
 
-<img src="https://skillicons.dev/icons?i=cpp,c,js,python&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=cpp,js&theme=dark"/>
 
 <br/><br/>
 
@@ -420,16 +420,7 @@ GitHub
 
 ---
 
-# 🏆 GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=ankit16x2choudharytech-tech&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=2&column=4"/>
-
-</div>
-
----
-
+ 
 # 📊 Contribution Activity
 
 <div align="center">
@@ -492,7 +483,7 @@ authentication and digital education.
 
 <td width="50%" valign="top">
 
-<a href="YOUR_PROJECT_2_URL">
+<a href="https://smartsave-one.vercel.app/">
 
 <img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,40:312E81,75:7C3AED,100:EC4899&text=SMART%20SAVE&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=Payment%20%2F%20Digital%20Services&descAlignY=67&descSize=14" width="100%"/>
 
@@ -515,7 +506,7 @@ digital services and business solutions.
 
 <br/><br/>
 
-<a href="YOUR_PROJECT_2_URL">
+<a href="https://smartsave-one.vercel.app/">
 <img src="https://img.shields.io/badge/VIEW_PROJECT-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
@@ -529,13 +520,13 @@ digital services and business solutions.
 
 <td width="50%" valign="top">
 
-<a href="YOUR_PROJECT_3_URL">
+<a href="https://eco-tract-lite.vercel.app/">
 
 <img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:022C22,40:064E3B,75:059669,100:22C55E&text=SMART%20TRANSPORT&fontSize=29&fontColor=FFFFFF&fontAlignY=40&desc=Smart%20Mobility%20Platform&descAlignY=67&descSize=14" width="100%"/>
 
 </a>
 
-<h2 align="center">🚍 Smart Transport</h2>
+<h2 align="center">🚍 Eco Track LITE</h2>
 
 <p align="center">
 <b>Smart Mobility & Bus Booking</b>
@@ -552,7 +543,7 @@ buses, autos, bikes and journey planning.
 
 <br/><br/>
 
-<a href="YOUR_PROJECT_3_URL">
+<a href="https://eco-tract-lite.vercel.app/">
 <img src="https://img.shields.io/badge/VIEW_PROJECT-22C55E?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
@@ -562,7 +553,7 @@ buses, autos, bikes and journey planning.
 
 <td width="50%" valign="top">
 
-<a href="YOUR_PROJECT_4_URL">
+<a href="https://github.com/ankit16x2choudharytech-tech/leetcode">
 
 <img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,40:172554,75:1D4ED8,100:38BDF8&text=LEETCODE&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=DSA%20%2F%20Problem%20Solving&descAlignY=67&descSize=14" width="100%"/>
 
@@ -585,7 +576,7 @@ synced from LeetCode to GitHub.
 
 <br/><br/>
 
-<a href="YOUR_PROJECT_4_URL">
+<a href="https://github.com/ankit16x2choudharytech-tech/leetcode">
 <img src="https://img.shields.io/badge/VIEW_SOLUTIONS-3B82F6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
@@ -728,7 +719,7 @@ synced from LeetCode to GitHub.
 
 &nbsp;
 
-<a href="https://www.linkedin.com/">
+<a href="https://www.linkedin.com/in/ankit-choudhary-a38602333">
 
 <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 
