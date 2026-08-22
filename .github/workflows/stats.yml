@@ -459,14 +459,13 @@ jobs:
               {current_streak}
           </text>
 
-
           <!-- ============================= -->
           <!-- STREAK LABEL -->
           <!-- ============================= -->
 
           <text
               x="450"
-              y="202"
+              y="230"
               text-anchor="middle"
               font-family="Arial, Helvetica, sans-serif"
               font-size="24"
@@ -477,7 +476,7 @@ jobs:
 
           <text
               x="450"
-              y="240"
+              y="260"
               text-anchor="middle"
               font-family="Arial, Helvetica, sans-serif"
               font-size="18"
