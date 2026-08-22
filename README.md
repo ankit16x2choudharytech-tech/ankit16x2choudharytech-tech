@@ -330,7 +330,7 @@ Deployment
 
 <div align="center">
 
-<a href="https://leetcode.com/">
+<a href="https://leetcode.com/u/ankit16x2choudhary/">
 
 <img src="https://img.shields.io/badge/LEETCODE-SOLVING%20PROBLEMS-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
 
@@ -408,13 +408,25 @@ GitHub
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=ankit16x2choudharytech-tech&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" width="49%"/>
+<img
+  src="https://github-readme-stats.vercel.app/api?username=ankit16x2choudharytech-tech&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=1800"
+  width="49%"
+  alt="GitHub Stats"
+/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankit16x2choudharytech-tech&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="49%"/>
+<img
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankit16x2choudharytech-tech&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=1800"
+  width="49%"
+  alt="Top Languages"
+/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=ankit16x2choudharytech-tech&theme=tokyonight&hide_border=true&mode=weekly" width="70%"/>
+<img
+  src="https://streak-stats.demolab.com?user=ankit16x2choudharytech-tech&theme=tokyonight&hide_border=true&mode=weekly"
+  width="70%"
+  alt="GitHub Streak"
+/>
 
 </div>
 
