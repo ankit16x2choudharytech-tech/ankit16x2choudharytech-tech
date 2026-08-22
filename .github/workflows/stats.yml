@@ -304,16 +304,16 @@ jobs:
           # # Streak Ring
           # # ==========================================
 
-           cx = 450
-           cy = 126
+          cx = 450
+          cy = 126
 
-           radius = 72
+          radius = 72
 
-           circumference = 2 * math.pi * radius
+          circumference = 2 * math.pi * radius
 
-           weekly_progress = min(current_streak / 7, 1)
+          weekly_progress = min(current_streak / 7, 1)
 
-           dash = circumference * weekly_progress
+          dash = circumference * weekly_progress
 
 
           # ==========================================
