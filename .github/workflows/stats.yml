@@ -3,7 +3,7 @@ name: Update GitHub Analytics
 on:
   schedule:
     # Update every 6 hours
-    - cron: "0 */6 * * *"https://github.com/ankit16x2choudharytech-tech/ankit16x2choudharytech-tech/edit/main/.github/workflows/stats.yml
+    - cron: "0 */6 * * *"
 
   workflow_dispatch:
 
@@ -559,7 +559,7 @@ jobs:
           print(f"Current Range: {current_range}")
           print(f"Longest Range: {longest_range}")
           PY
-          PY
+        
 
       # ==============================
       # Commit Generated SVGs
