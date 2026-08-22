@@ -3,7 +3,7 @@ name: Update GitHub Analytics
 on:
   schedule:
     # Update every 6 hours
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *"https://github.com/ankit16x2choudharytech-tech/ankit16x2choudharytech-tech/edit/main/.github/workflows/stats.yml
 
   workflow_dispatch:
 
@@ -161,149 +161,404 @@ jobs:
           # Generate SVG
           # ==========================================
 
+          # ==========================================
+          # Calculate Week Streaks
+          # ==========================================
+
+          from datetime import datetime, timedelta
+          import math
+
+          def get_date(value):
+              return datetime.strptime(value, "%Y-%m-%d").date()
+
+          today = date.today()
+
+          contribution_days = []
+
+          for day in days:
+              contribution_days.append({
+                  "date": get_date(day["date"]),
+                  "count": day["count"]
+              })
+
+          contribution_days.sort(key=lambda x: x["date"])
+
+
+          # ==========================================
+          # Current Streak
+          # ==========================================
+
+          current_streak = 0
+          current_start = None
+          current_end = None
+
+          if contribution_days:
+
+              latest_date = contribution_days[-1]["date"]
+              check_date = latest_date
+
+              for day in reversed(contribution_days):
+
+                  if day["date"] == check_date and day["count"] > 0:
+
+                      if current_end is None:
+                          current_end = day["date"]
+
+                      current_streak += 1
+                      current_start = day["date"]
+
+                      check_date -= timedelta(days=1)
+
+                  elif day["date"] < check_date:
+                      break
+
+
+          # ==========================================
+          # Longest Streak
+          # ==========================================
+
+          longest_streak = 0
+          running_streak = 0
+          running_start = None
+
+          longest_start = None
+          longest_end = None
+
+          for day in contribution_days:
+
+              if day["count"] > 0:
+
+                  if running_streak == 0:
+                      running_start = day["date"]
+
+                  running_streak += 1
+
+                  if running_streak > longest_streak:
+                      longest_streak = running_streak
+                      longest_start = running_start
+                      longest_end = day["date"]
+
+              else:
+                  running_streak = 0
+                  running_start = None
+
+
+          # ==========================================
+          # Format Dates
+          # ==========================================
+
+          def format_date(d):
+
+              if d is None:
+                  return ""
+
+              return d.strftime("%b %-d")
+
+
+          if current_start and current_end:
+
+              if current_start == current_end:
+                  current_range = format_date(current_start)
+
+              else:
+                  current_range = (
+                      f"{format_date(current_start)} - "
+                      f"{format_date(current_end)}"
+                  )
+
+          else:
+              current_range = "No active streak"
+
+
+          if longest_start and longest_end:
+
+              if longest_start == longest_end:
+                  longest_range = format_date(longest_start)
+
+              else:
+                  longest_range = (
+                      f"{format_date(longest_start)} - "
+                      f"{format_date(longest_end)}"
+                  )
+
+          else:
+              longest_range = "No streak"
+
+
+          # ==========================================
+          # SVG Configuration
+          # ==========================================
+
           width = 900
-          height = 230
+          height = 350
 
-          svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
+          background = "#1a1b26"
+          blue = "#6ea8ff"
+          purple = "#c084fc"
+          teal = "#2dd4bf"
+          white = "#ffffff"
+          separator = "#c7c7c7"
+
+
+          # ==========================================
+          # Streak Ring
+          # ==========================================
+
+          cx = 450
+          cy = 126
+
+          radius = 72
+
+          circumference = 2 * math.pi * radius
+
+          weekly_progress = min(current_streak / 7, 1)
+
+          dash = circumference * weekly_progress
+
+
+          # ==========================================
+          # Generate SVG
+          # ==========================================
+
+          svg = f'''<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="{width}"
+          height="{height}"
+          viewBox="0 0 {width} {height}"
+          role="img"
+          aria-label="GitHub contribution analytics">
+
+          <rect
               width="{width}"
               height="{height}"
-              viewBox="0 0 {width} {height}"
-              role="img"
-              aria-label="GitHub contribution analytics">
+              rx="10"
+              fill="{background}"
+          />
 
-            <defs>
-              <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#161b22"/>
-                <stop offset="100%" stop-color="#0d1117"/>
-              </linearGradient>
 
-              <filter id="shadow">
-                <feDropShadow dx="0" dy="4" stdDeviation="8"
-                  flood-color="#000000" flood-opacity="0.35"/>
-              </filter>
-            </defs>
+          <!-- ============================= -->
+          <!-- LEFT SECTION -->
+          <!-- ============================= -->
 
-            <rect
-              x="0"
-              y="0"
-              width="{width}"
-              height="{height}"
-              rx="16"
-              fill="url(#bg)"
-              stroke="#30363d"
-              stroke-width="1"
-              filter="url(#shadow)"
-            />
+          <text
+              x="150"
+              y="143"
+              text-anchor="middle"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="52"
+              font-weight="700"
+              fill="{blue}">
+              {total}
+          </text>
 
-            <text
-              x="450"
-              y="42"
+          <text
+              x="150"
+              y="190"
               text-anchor="middle"
               font-family="Arial, Helvetica, sans-serif"
               font-size="22"
-              font-weight="700"
-              fill="#ffffff">
-              GitHub Contributions
-            </text>
-
-            <line
-              x1="40"
-              y1="62"
-              x2="860"
-              y2="62"
-              stroke="#30363d"
-            />
-
-            <!-- Total Contributions -->
-
-            <text
-              x="180"
-              y="110"
-              text-anchor="middle"
-              font-family="Arial, Helvetica, sans-serif"
-              font-size="34"
-              font-weight="700"
-              fill="#ffffff">
-              {total}
-            </text>
-
-            <text
-              x="180"
-              y="137"
-              text-anchor="middle"
-              font-family="Arial, Helvetica, sans-serif"
-              font-size="14"
-              fill="#8b949e">
+              fill="{blue}">
               Total Contributions
-            </text>
+          </text>
 
-            <!-- Current Streak -->
-
-            <text
-              x="450"
-              y="110"
+          <text
+              x="150"
+              y="225"
               text-anchor="middle"
               font-family="Arial, Helvetica, sans-serif"
-              font-size="34"
+              font-size="18"
+              fill="{teal}">
+              {format_date(contribution_days[0]["date"])}
+              -
+              {format_date(contribution_days[-1]["date"])}
+          </text>
+
+
+          <!-- ============================= -->
+          <!-- LEFT SEPARATOR -->
+          <!-- ============================= -->
+
+          <line
+              x1="300"
+              y1="48"
+              x2="300"
+              y2="305"
+              stroke="{separator}"
+              stroke-width="1"
+          />
+
+
+          <!-- ============================= -->
+          <!-- CENTER STREAK RING -->
+          <!-- ============================= -->
+
+          <circle
+              cx="{cx}"
+              cy="{cy}"
+              r="{radius}"
+              fill="none"
+              stroke="#24283b"
+              stroke-width="10"
+          />
+
+          <circle
+              cx="{cx}"
+              cy="{cy}"
+              r="{radius}"
+              fill="none"
+              stroke="{blue}"
+              stroke-width="10"
+              stroke-linecap="round"
+              stroke-dasharray="{dash} {circumference - dash}"
+              transform="rotate(-90 {cx} {cy})"
+          />
+
+
+          <!-- ============================= -->
+          <!-- FLAME ICON -->
+          <!-- ============================= -->
+
+          <path
+              d="
+              M450 35
+              C462 50 458 60 470 69
+              C480 78 478 95 466 103
+              C458 109 445 111 437 103
+              C426 94 428 78 438 68
+              C445 61 449 52 450 35
+              Z
+              "
+              fill="{blue}"
+          />
+
+          <path
+              d="
+              M450 65
+              C456 73 460 80 457 87
+              C455 94 449 98 444 94
+              C439 90 440 82 445 76
+              C448 72 449 68 450 65
+              Z
+              "
+              fill="{background}"
+          />
+
+
+          <!-- ============================= -->
+          <!-- STREAK NUMBER -->
+          <!-- ============================= -->
+
+          <text
+              x="450"
+              y="145"
+              text-anchor="middle"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="50"
               font-weight="700"
-              fill="#ffffff">
+              fill="{purple}">
               {current_streak}
-            </text>
+          </text>
 
-            <text
+
+          <!-- ============================= -->
+          <!-- STREAK LABEL -->
+          <!-- ============================= -->
+
+          <text
               x="450"
-              y="137"
+              y="202"
               text-anchor="middle"
               font-family="Arial, Helvetica, sans-serif"
-              font-size="14"
-              fill="#8b949e">
-              Current Streak
-            </text>
-
-            <!-- Longest Streak -->
-
-            <text
-              x="720"
-              y="110"
-              text-anchor="middle"
-              font-family="Arial, Helvetica, sans-serif"
-              font-size="34"
+              font-size="24"
               font-weight="700"
-              fill="#ffffff">
-              {longest_streak}
-            </text>
+              fill="{purple}">
+              Week Streak
+          </text>
 
-            <text
-              x="720"
-              y="137"
-              text-anchor="middle"
-              font-family="Arial, Helvetica, sans-serif"
-              font-size="14"
-              fill="#8b949e">
-              Longest Streak
-            </text>
-
-            <text
+          <text
               x="450"
-              y="185"
+              y="240"
               text-anchor="middle"
               font-family="Arial, Helvetica, sans-serif"
-              font-size="12"
-              fill="#8b949e">
-              Live data from GitHub Contribution Calendar
-            </text>
+              font-size="18"
+              fill="{teal}">
+              {current_range}
+          </text>
+
+
+          <!-- ============================= -->
+          <!-- RIGHT SEPARATOR -->
+          <!-- ============================= -->
+
+          <line
+              x1="600"
+              y1="48"
+              x2="600"
+              y2="305"
+              stroke="{separator}"
+              stroke-width="1"
+          />
+
+
+          <!-- ============================= -->
+          <!-- RIGHT SECTION -->
+          <!-- ============================= -->
+
+          <text
+              x="750"
+              y="143"
+              text-anchor="middle"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="52"
+              font-weight="700"
+              fill="{blue}">
+              {longest_streak}
+          </text>
+
+          <text
+              x="750"
+              y="190"
+              text-anchor="middle"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="22"
+              fill="{blue}">
+              Longest Week Streak
+          </text>
+
+          <text
+              x="750"
+              y="225"
+              text-anchor="middle"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="18"
+              fill="{teal}">
+              {longest_range}
+          </text>
 
           </svg>
           '''
 
+
+          # ==========================================
+          # Save SVG
+          # ==========================================
+
           os.makedirs("profile", exist_ok=True)
 
-          with open("profile/contributions.svg", "w", encoding="utf-8") as file:
+          with open(
+              "profile/contributions.svg",
+              "w",
+              encoding="utf-8"
+          ) as file:
               file.write(svg)
+
 
           print(f"Total Contributions: {total}")
           print(f"Current Streak: {current_streak}")
           print(f"Longest Streak: {longest_streak}")
+          print(f"Current Range: {current_range}")
+          print(f"Longest Range: {longest_range}")
+          PY
           PY
 
       # ==============================
