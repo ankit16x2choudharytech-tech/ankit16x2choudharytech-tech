@@ -431,11 +431,17 @@ GitHub
 
 ---
 
+ 
+
 # 🐍 Contribution Snake
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ankit16x2choudharytech-tech/ankit16x2choudharytech-tech/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+<img
+  src="https://raw.githubusercontent.com/ankit16x2choudharytech-tech/ankit16x2choudharytech-tech/output/github-contribution-grid-snake.svg?v=3"
+  width="100%"
+  alt="GitHub Contribution Snake"
+/>
 
 </div>
 
