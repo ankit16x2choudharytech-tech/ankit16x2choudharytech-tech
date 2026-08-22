@@ -443,11 +443,16 @@ GitHub
   alt="GitHub Streak"
 />
 
+<br/>
+<br/>
+
+<img
+  src="./profile/contributions.svg"
+  width="70%"
+  alt="GitHub Contribution Analytics"
+/>
+
 </div>
-
----
-
----
 
  
 # 📊 Contribution Activity
