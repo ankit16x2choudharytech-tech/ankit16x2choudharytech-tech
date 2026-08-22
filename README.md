@@ -481,66 +481,87 @@ GitHub
 <table>
 <tr>
 
+<!-- ECOTRACK LITE -->
+
 <td width="50%" valign="top">
 
-<a href="YOUR_PROJECT_1_URL">
+<a href="https://eco-tract-lite.vercel.app/">
 
-<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,40:172554,75:2563EB,100:06B6D4&text=SMART%20EDU&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=Education%20%2F%20Learning%20Platform&descAlignY=67&descSize=14" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:022C22,35:064E3B,70:059669,100:22C55E&text=ECOTRACK%20LITE&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=AI%20%2F%20CARBON%20TRACKING&descAlignY=67&descSize=14" width="100%"/>
 
 </a>
 
-<h2 align="center">🎓 Smart Edu</h2>
+<h2 align="center">🌱 EcoTrack Lite</h2>
 
 <p align="center">
-<b>Modern Digital Learning Platform</b>
+<b>AI-Powered Sustainability Platform</b>
 </p>
 
 <p align="center">
-Online learning platform focused on courses,
-authentication and digital education.
+Track carbon footprint, build eco-friendly habits,
+complete goals, earn badges and compete on leaderboards.
 </p>
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=nextjs,react,firebase,tailwind&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=nextjs,typescript,firebase,tailwind&theme=dark"/>
 
 <br/><br/>
 
-<a href="YOUR_PROJECT_1_URL">
-<img src="https://img.shields.io/badge/VIEW_PROJECT-06B6D4?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/AI-POWERED-22C55E?style=flat-square&labelColor=020617"/>
+<img src="https://img.shields.io/badge/GAMIFICATION-ACTIVE-16A34A?style=flat-square&labelColor=020617"/>
+
+<br/><br/>
+
+<a href="https://eco-tract-lite.vercel.app/">
+<img src="https://img.shields.io/badge/EXPLORE_PROJECT-22C55E?style=for-the-badge&logo=vercel&logoColor=white"/>
+</a>
+
+&nbsp;
+
+<a href="https://github.com/ankit16x2choudharytech-tech/EcoTract-lite">
+<img src="https://img.shields.io/badge/SOURCE_CODE-020617?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </div>
 
 </td>
 
+
+<!-- SHADOWVAULT -->
+
 <td width="50%" valign="top">
 
-<a href="https://smartsave-one.vercel.app/">
+<a href="https://github.com/ankit16x2choudharytech-tech/Shadow-Vault">
 
-<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,40:312E81,75:7C3AED,100:EC4899&text=SMART%20SAVE&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=Payment%20%2F%20Digital%20Services&descAlignY=67&descSize=14" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,35:1E1B4B,70:7C3AED,100:EC4899&text=SHADOWVAULT&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=SECURE%20DIGITAL%20MARKETPLACE&descAlignY=67&descSize=13" width="100%"/>
 
 </a>
 
-<h2 align="center">💳 Smart Save</h2>
+<h2 align="center">🛡️ ShadowVault</h2>
 
 <p align="center">
-<b>Digital Payment & Services Platform</b>
+<b>Secure Digital Marketplace</b>
 </p>
 
 <p align="center">
-A platform for online payments,
-digital services and business solutions.
+Modern digital marketplace with payments,
+authentication, 2FA, admin controls and premium UI.
 </p>
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=nextjs,nodejs,express,mongodb&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=nextjs,nodejs,mongodb,typescript&theme=dark"/>
 
 <br/><br/>
 
-<a href="https://smartsave-one.vercel.app/">
-<img src="https://img.shields.io/badge/VIEW_PROJECT-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/RAZORPAY-INTEGRATED-8B5CF6?style=flat-square&labelColor=020617"/>
+<img src="https://img.shields.io/badge/2FA-SECURED-EC4899?style=flat-square&labelColor=020617"/>
+
+<br/><br/>
+
+<a href="https://github.com/ankit16x2choudharytech-tech/Shadow-Vault">
+<img src="https://img.shields.io/badge/EXPLORE_PROJECT-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </div>
@@ -549,46 +570,57 @@ digital services and business solutions.
 
 </tr>
 
+
 <tr>
+
+<!-- NOVAVOICE -->
 
 <td width="50%" valign="top">
 
-<a href="https://eco-tract-lite.vercel.app/">
+<a href="https://github.com/ankit16x2choudharytech-tech/Nova-Voice-Assistant">
 
-<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:022C22,40:064E3B,75:059669,100:22C55E&text=SMART%20TRANSPORT&fontSize=29&fontColor=FFFFFF&fontAlignY=40&desc=Smart%20Mobility%20Platform&descAlignY=67&descSize=14" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,35:164E63,70:0891B2,100:22D3EE&text=NOVAVOICE%20AI&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=REAL%20TIME%20VOICE%20ASSISTANT&descAlignY=67&descSize=13" width="100%"/>
 
 </a>
 
-<h2 align="center">🚍 Eco Track LITE</h2>
+<h2 align="center">🤖 NovaVoice AI</h2>
 
 <p align="center">
-<b>Smart Mobility & Bus Booking</b>
+<b>Real-Time AI Voice Assistant</b>
 </p>
 
 <p align="center">
-Smart transportation concept connecting
-buses, autos, bikes and journey planning.
+AI voice assistant powered by Gemini Live API
+with real-time communication and Google Calendar integration.
 </p>
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=react,nodejs,firebase,js&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=python,fastapi,js,google&theme=dark"/>
 
 <br/><br/>
 
-<a href="https://eco-tract-lite.vercel.app/">
-<img src="https://img.shields.io/badge/VIEW_PROJECT-22C55E?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GEMINI-LIVE%20API-22D3EE?style=flat-square&labelColor=020617"/>
+<img src="https://img.shields.io/badge/WEBSOCKET-REALTIME-0891B2?style=flat-square&labelColor=020617"/>
+
+<br/><br/>
+
+<a href="https://github.com/ankit16x2choudharytech-tech/Nova-Voice-Assistant">
+<img src="https://img.shields.io/badge/EXPLORE_PROJECT-06B6D4?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </div>
 
 </td>
 
+
+<!-- LEETCODE -->
+
 <td width="50%" valign="top">
 
 <a href="https://github.com/ankit16x2choudharytech-tech/leetcode">
 
-<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,40:172554,75:1D4ED8,100:38BDF8&text=LEETCODE&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=DSA%20%2F%20Problem%20Solving&descAlignY=67&descSize=14" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,35:172554,70:1D4ED8,100:38BDF8&text=LEETCODE&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=DSA%20%2F%20PROBLEM%20SOLVING&descAlignY=67&descSize=14" width="100%"/>
 
 </a>
 
@@ -609,6 +641,11 @@ synced from LeetCode to GitHub.
 
 <br/><br/>
 
+<img src="https://img.shields.io/badge/LEETCODE-ACTIVE-FFA116?style=flat-square&labelColor=020617"/>
+<img src="https://img.shields.io/badge/AUTO--SYNC-GITHUB-3B82F6?style=flat-square&labelColor=020617"/>
+
+<br/><br/>
+
 <a href="https://github.com/ankit16x2choudharytech-tech/leetcode">
 <img src="https://img.shields.io/badge/VIEW_SOLUTIONS-3B82F6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
@@ -618,11 +655,12 @@ synced from LeetCode to GitHub.
 </td>
 
 </tr>
+
 </table>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1000&color=22D3EE&center=true&vCenter=true&width=750&lines=Designing+%E2%86%92+Developing+%E2%86%92+Testing+%E2%86%92+Deploying;Turning+Ideas+Into+Real+Products+%F0%9F%9A%80;More+Projects+Coming+Soon..."/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2000&pause=800&color=22D3EE&center=true&vCenter=true&width=850&lines=DESIGN+%E2%86%92+DEVELOP+%E2%86%92+DEBUG+%E2%86%92+DEPLOY;AI+%E2%80%A2+FULL+STACK+%E2%80%A2+SECURITY+%E2%80%A2+DSA;TURNING+IDEAS+INTO+REAL+PRODUCTS+%F0%9F%9A%80;MORE+PROJECTS+LOADING...+%E2%8F%B3"/>
 
 </div>
 
