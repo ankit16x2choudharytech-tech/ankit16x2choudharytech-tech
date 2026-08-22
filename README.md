@@ -404,23 +404,38 @@ GitHub
 
 ---
 
-# 📈 GitHub Analytics
+ 
+ # 📈 GitHub Analytics
 
 <div align="center">
 
+<table>
+<tr>
+
+<td width="50%">
+
 <img
-  src="https://github-readme-stats.vercel.app/api?username=ankit16x2choudharytech-tech&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=1800"
-  width="49%"
+  src="./profile/stats.svg"
+  width="100%"
   alt="GitHub Stats"
 />
 
+</td>
+
+<td width="50%">
+
 <img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankit16x2choudharytech-tech&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=1800"
-  width="49%"
+  src="./profile/top-langs.svg"
+  width="100%"
   alt="Top Languages"
 />
 
-<br/><br/>
+</td>
+
+</tr>
+</table>
+
+<br/>
 
 <img
   src="https://streak-stats.demolab.com?user=ankit16x2choudharytech-tech&theme=tokyonight&hide_border=true&mode=weekly"
