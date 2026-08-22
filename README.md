@@ -436,14 +436,6 @@ GitHub
 </table>
 
 <br/>
-
-<img
-  src="https://streak-stats.demolab.com?user=ankit16x2choudharytech-tech&theme=tokyonight&hide_border=true&mode=weekly"
-  width="70%"
-  alt="GitHub Streak"
-/>
-
-<br/>
 <br/>
 
 <img
