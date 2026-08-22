@@ -412,17 +412,17 @@ GitHub
 <table>
 <tr>
 
-<td width="50%" valign="top" align="center">
+<td width="50%">
 
 <img
   src="./profile/stats.svg"
   width="100%"
-  alt="GitHub Statistics"
+  alt="GitHub Stats"
 />
 
 </td>
 
-<td width="50%" valign="top" align="center">
+<td width="50%">
 
 <img
   src="./profile/top-langs.svg"
@@ -438,15 +438,9 @@ GitHub
 <br/>
 
 <img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=ankit16x2choudharytech-tech&bg_color=0F172A&color=38BDF8&line=06B6D4&point=FFFFFF&area=true&hide_border=true"
-  width="100%"
-  alt="GitHub Contribution Activity"
-/>
-
-<br/><br/>
-
-<img
-  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2200&pause=800&color=22D3EE&center=true&vCenter=true&width=800&lines=CONTRIBUTIONS+%E2%86%92+CODE+%E2%86%92+BUILD+%E2%86%92+REPEAT;EVERY+COMMIT+COUNTS+%F0%9F%9A%80;KEEP+BUILDING...+KEEP+LEARNING..."
+  src="https://streak-stats.demolab.com?user=ankit16x2choudharytech-tech&theme=tokyonight&hide_border=true&mode=weekly"
+  width="70%"
+  alt="GitHub Streak"
 />
 
 </div>
