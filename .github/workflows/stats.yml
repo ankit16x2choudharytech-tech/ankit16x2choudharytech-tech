@@ -2,63 +2,48 @@ name: Update GitHub Analytics
 
 on:
   schedule:
-    # Daily at 01:00 UTC
     - cron: "0 1 * * *"
 
-  # Manual run from GitHub Actions
   workflow_dispatch:
 
 jobs:
-  update-stats:
+  build:
     runs-on: ubuntu-latest
 
     permissions:
       contents: write
 
     steps:
-      # Checkout repository
+
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      # Generate GitHub Stats
+      # GitHub Stats
       - name: Generate GitHub Stats
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: >-
-            username=ankit16x2choudharytech-tech
-            &show_icons=true
-            &include_all_commits=true
-            &count_private=true
-            &rank_icon=github
-            &theme=tokyonight
-            &hide_border=true
+          options: 'username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&rank_icon=github'
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Generate Top Languages
+      # Top Languages
       - name: Generate Top Languages
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: >-
-            username=ankit16x2choudharytech-tech
-            &layout=compact
-            &langs_count=8
-            &theme=tokyonight
-            &hide_border=true
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true'
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Commit generated SVG files
-      - name: Commit Analytics Cards
+      # Commit generated SVGs
+      - name: Commit Analytics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add profile/stats.svg
-          git add profile/top-langs.svg
+          git add profile/stats.svg profile/top-langs.svg
 
-          git commit -m "Update GitHub analytics" || exit 0
+          git diff --cached --quiet || git commit -m "Update GitHub analytics"
 
           git push
