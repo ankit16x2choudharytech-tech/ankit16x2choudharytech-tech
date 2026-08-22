@@ -1,49 +1,78 @@
-name: Update GitHub Analytics
+name: 📊 Update GitHub Analytics
 
 on:
   schedule:
-    - cron: "0 1 * * *"
+    # Every 6 hours
+    - cron: "0 */6 * * *"
 
   workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+permissions:
+  contents: write
 
-    permissions:
-      contents: write
+jobs:
+  update:
+    name: Generate GitHub Stats
+    runs-on: ubuntu-latest
 
     steps:
 
-      - name: Checkout repository
+      # ─────────────────────────────────────
+      # Checkout profile repository
+      # ─────────────────────────────────────
+      - name: 📥 Checkout repository
         uses: actions/checkout@v6
 
-      # GitHub Stats
-      - name: Generate GitHub Stats
+      # ─────────────────────────────────────
+      # Generate GitHub Stats
+      # ─────────────────────────────────────
+      - name: 📊 Generate GitHub Stats
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&rank_icon=github'
+          options: >-
+            username=${{ github.repository_owner }}&
+            show_icons=true&
+            include_all_commits=true&
+            count_private=true&
+            rank_icon=github&
+            theme=tokyonight&
+            hide_border=true&
+            custom_title=GitHub%20Analytics
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
-      # Top Languages
-      - name: Generate Top Languages
+      # ─────────────────────────────────────
+      # Generate Top Languages
+      # ─────────────────────────────────────
+      - name: 💻 Generate Top Languages
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true'
+          options: >-
+            username=${{ github.repository_owner }}&
+            layout=compact&
+            langs_count=8&
+            theme=tokyonight&
+            hide_border=true
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
-      # Commit generated SVGs
-      - name: Commit Analytics
+      # ─────────────────────────────────────
+      # Commit updated SVG files
+      # ─────────────────────────────────────
+      - name: 💾 Commit Analytics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add profile/stats.svg profile/top-langs.svg
 
-          git diff --cached --quiet || git commit -m "Update GitHub analytics"
-
-          git push
+          if git diff --cached --quiet; then
+            echo "No analytics changes."
+          else
+            git commit -m "📊 Update GitHub analytics"
+            git push
+          fi
