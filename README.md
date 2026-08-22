@@ -513,7 +513,7 @@ complete goals, earn badges and compete on leaderboards.
 
 <br/><br/>
 
-<a href="https://eco-tract-lite.vercel.app/">
+<a href="https://github.com/ankit16x2choudharytech-tech/EcoTract-lite">
 <img src="https://img.shields.io/badge/EXPLORE_PROJECT-22C55E?style=for-the-badge&logo=vercel&logoColor=white"/>
 </a>
 
@@ -532,7 +532,7 @@ complete goals, earn badges and compete on leaderboards.
 
 <td width="50%" valign="top">
 
-<a href="https://github.com/ankit16x2choudharytech-tech/Shadow-Vault">
+<a href="https://shadow-vault-xi.vercel.app/">
 
 <img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,35:1E1B4B,70:7C3AED,100:EC4899&text=SHADOWVAULT&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=SECURE%20DIGITAL%20MARKETPLACE&descAlignY=67&descSize=13" width="100%"/>
 
@@ -577,7 +577,7 @@ authentication, 2FA, admin controls and premium UI.
 
 <td width="50%" valign="top">
 
-<a href="https://github.com/ankit16x2choudharytech-tech/Nova-Voice-Assistant">
+<a href="https://nova-voice-assistant-five.vercel.app/">
 
 <img src="https://capsule-render.vercel.app/api?type=rounded&height=190&color=0:020617,35:164E63,70:0891B2,100:22D3EE&text=NOVAVOICE%20AI&fontSize=34&fontColor=FFFFFF&fontAlignY=40&desc=REAL%20TIME%20VOICE%20ASSISTANT&descAlignY=67&descSize=13" width="100%"/>
 
