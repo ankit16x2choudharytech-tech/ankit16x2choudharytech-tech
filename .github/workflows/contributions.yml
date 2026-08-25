@@ -1,0 +1,285 @@
+name: Update Contribution Activity
+
+on:
+  schedule:
+    # Run once every day at 00:00 UTC
+    - cron: "0 6 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  update-contributions:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+
+      # ==========================================
+      # Checkout Repository
+      # ==========================================
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+
+      # ==========================================
+      # Generate Contribution SVG
+      # ==========================================
+
+      - name: Generate Contribution SVG
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+
+        run: |
+
+          python3 <<'PY'
+
+          import os
+          import json
+          import urllib.request
+          from datetime import datetime
+          from xml.sax.saxutils import escape
+
+          TOKEN = os.environ["GH_TOKEN"]
+          USERNAME = os.environ["GITHUB_USERNAME"]
+
+          QUERY = """
+          query($login: String!) {
+            user(login: $login) {
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      contributionCount
+                      date
+                    }
+                  }
+                }
+              }
+            }
+          }
+          """
+
+          payload = json.dumps({
+              "query": QUERY,
+              "variables": {
+                  "login": USERNAME
+              }
+          }).encode("utf-8")
+
+          request = urllib.request.Request(
+              "https://api.github.com/graphql",
+              data=payload,
+              headers={
+                  "Authorization": f"Bearer {TOKEN}",
+                  "Content-Type": "application/json",
+                  "User-Agent": "github-contribution-generator"
+              }
+          )
+
+          with urllib.request.urlopen(request) as response:
+              data = json.loads(response.read())
+
+          if "errors" in data:
+              raise Exception(json.dumps(data["errors"], indent=2))
+
+          calendar = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+
+          total = calendar["totalContributions"]
+          weeks = calendar["weeks"]
+
+          # ==========================================
+          # SVG Settings
+          # ==========================================
+
+          WIDTH = 1100
+          HEIGHT = 260
+
+          LEFT = 55
+          TOP = 70
+
+          CELL = 13
+          GAP = 3
+
+          COLORS = [
+              "#161B22",
+              "#0E4429",
+              "#006D32",
+              "#26A641",
+              "#39D353"
+          ]
+
+          # ==========================================
+          # SVG Header
+          # ==========================================
+
+          svg = []
+
+          svg.append(
+              f'<svg xmlns="http://www.w3.org/2000/svg" '
+              f'width="{WIDTH}" height="{HEIGHT}" '
+              f'viewBox="0 0 {WIDTH} {HEIGHT}">'
+          )
+
+          svg.append("""
+          <style>
+              .title {
+                  font-family: Arial, sans-serif;
+                  font-size: 22px;
+                  font-weight: 700;
+                  fill: #F0F6FC;
+              }
+
+              .text {
+                  font-family: Arial, sans-serif;
+                  font-size: 12px;
+                  fill: #8B949E;
+              }
+
+              .month {
+                  font-family: Arial, sans-serif;
+                  font-size: 11px;
+                  fill: #8B949E;
+              }
+          </style>
+          """)
+
+          # ==========================================
+          # Title
+          # ==========================================
+
+          svg.append(
+              f'<text x="{LEFT}" y="32" class="title">'
+              f'Contribution Activity'
+              f'</text>'
+          )
+
+          svg.append(
+              f'<text x="{LEFT}" y="52" class="text">'
+              f'{total} contributions in the last year'
+              f'</text>'
+          )
+
+          # ==========================================
+          # Contribution Grid
+          # ==========================================
+
+          for week_index, week in enumerate(weeks):
+
+              for day_index, day in enumerate(
+                  week["contributionDays"]
+              ):
+
+                  count = day["contributionCount"]
+
+                  if count == 0:
+                      color = COLORS[0]
+                  elif count <= 2:
+                      color = COLORS[1]
+                  elif count <= 5:
+                      color = COLORS[2]
+                  elif count <= 9:
+                      color = COLORS[3]
+                  else:
+                      color = COLORS[4]
+
+                  x = LEFT + week_index * (CELL + GAP)
+
+                  y = TOP + day_index * (CELL + GAP)
+
+                  date = day["date"]
+
+                  svg.append(
+                      f'<rect '
+                      f'x="{x}" '
+                      f'y="{y}" '
+                      f'width="{CELL}" '
+                      f'height="{CELL}" '
+                      f'rx="3" '
+                      f'fill="{color}">'
+                      f'<title>{escape(date)}: '
+                      f'{count} contributions'
+                      f'</title>'
+                      f'</rect>'
+                  )
+
+          # ==========================================
+          # Legend
+          # ==========================================
+
+          legend_y = TOP + 7 * (CELL + GAP) + 25
+
+          svg.append(
+              f'<text x="{LEFT}" y="{legend_y}" class="text">'
+              f'Less'
+              f'</text>'
+          )
+
+          for i, color in enumerate(COLORS):
+
+              x = LEFT + 35 + i * 18
+
+              svg.append(
+                  f'<rect '
+                  f'x="{x}" '
+                  f'y="{legend_y - 11}" '
+                  f'width="12" '
+                  f'height="12" '
+                  f'rx="2" '
+                  f'fill="{color}"/>'
+              )
+
+          svg.append(
+              f'<text x="{LEFT + 35 + len(COLORS) * 18 + 5}" '
+              f'y="{legend_y}" '
+              f'class="text">More</text>'
+          )
+
+          svg.append("</svg>")
+
+          # ==========================================
+          # Save SVG
+          # ==========================================
+
+          os.makedirs("profile", exist_ok=True)
+
+          with open(
+              "profile/contributions.svg",
+              "w",
+              encoding="utf-8"
+          ) as file:
+
+              file.write("\n".join(svg))
+
+          print(f"Generated contribution SVG")
+          print(f"Total contributions: {total}")
+
+          PY
+
+
+      # ==========================================
+      # Commit Changes
+      # ==========================================
+
+      - name: Commit updated contribution graph
+        run: |
+
+          git config user.name "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/contributions.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes detected."
+          else
+            git commit -m "Update contribution activity"
+            git push
+          fi
