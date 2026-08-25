@@ -451,7 +451,11 @@ GitHub
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ankit16x2choudharytech-tech&bg_color=0F172A&color=38BDF8&line=06B6D4&point=FFFFFF&area=true&hide_border=true" width="100%"/>
+<img
+  src="./profile/contributions.svg"
+  width="100%"
+  alt="GitHub Contribution Activity"
+/>
 
 </div>
 
