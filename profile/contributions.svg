@@ -1,0 +1,215 @@
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="900"
+height="350"
+viewBox="0 0 900 350"
+role="img"
+aria-label="GitHub contribution analytics">
+
+<rect
+    width="900"
+    height="350"
+    rx="10"
+    fill="#1a1b26"
+/>
+
+
+<!-- ============================= -->
+<!-- LEFT SECTION -->
+<!-- ============================= -->
+
+<text
+    x="150"
+    y="143"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="52"
+    font-weight="700"
+    fill="#6ea8ff">
+    163
+</text>
+
+<text
+    x="150"
+    y="190"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="22"
+    fill="#6ea8ff">
+    Total Contributions
+</text>
+
+<text
+    x="150"
+    y="225"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="18"
+    fill="#2dd4bf">
+    Aug 24
+    -
+    Aug 25
+</text>
+
+
+<!-- ============================= -->
+<!-- LEFT SEPARATOR -->
+<!-- ============================= -->
+
+<line
+    x1="300"
+    y1="48"
+    x2="300"
+    y2="305"
+    stroke="#c7c7c7"
+    stroke-width="1"
+/>
+
+
+<!-- ============================= -->
+<!-- CENTER STREAK RING -->
+<!-- ============================= -->
+
+<circle
+    cx="450"
+    cy="126"
+    r="72"
+    fill="none"
+    stroke="#24283b"
+    stroke-width="10"
+/>
+
+<circle
+    cx="450"
+    cy="126"
+    r="72"
+    fill="none"
+    stroke="#6ea8ff"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-dasharray="452.3893421169302 0.0"
+    transform="rotate(-90 450 126)"
+/>
+
+
+<!-- ============================= -->
+<!-- FLAME ICON -->
+<!-- ============================= -->
+
+<path
+    d="
+    M450 35
+    C462 50 458 60 470 69
+    C480 78 478 95 466 103
+    C458 109 445 111 437 103
+    C426 94 428 78 438 68
+    C445 61 449 52 450 35
+    Z
+    "
+    fill="#6ea8ff"
+/>
+
+<path
+    d="
+    M450 65
+    C456 73 460 80 457 87
+    C455 94 449 98 444 94
+    C439 90 440 82 445 76
+    C448 72 449 68 450 65
+    Z
+    "
+    fill="#1a1b26"
+/>
+
+
+<!-- ============================= -->
+<!-- STREAK NUMBER -->
+<!-- ============================= -->
+
+<text
+    x="450"
+    y="145"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="50"
+    font-weight="700"
+    fill="#c084fc">
+    7
+</text>
+
+<!-- ============================= -->
+<!-- STREAK LABEL -->
+<!-- ============================= -->
+
+<text
+    x="450"
+    y="230"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+    font-weight="700"
+    fill="#c084fc">
+    Week Streak
+</text>
+
+<text
+    x="450"
+    y="260"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="18"
+    fill="#2dd4bf">
+    Aug 19 - Aug 25
+</text>
+
+
+<!-- ============================= -->
+<!-- RIGHT SEPARATOR -->
+<!-- ============================= -->
+
+<line
+    x1="600"
+    y1="48"
+    x2="600"
+    y2="305"
+    stroke="#c7c7c7"
+    stroke-width="1"
+/>
+
+
+<!-- ============================= -->
+<!-- RIGHT SECTION -->
+<!-- ============================= -->
+
+<text
+    x="750"
+    y="143"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="52"
+    font-weight="700"
+    fill="#6ea8ff">
+    7
+</text>
+
+<text
+    x="750"
+    y="190"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="22"
+    fill="#6ea8ff">
+    Longest Week Streak
+</text>
+
+<text
+    x="750"
+    y="225"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="18"
+    fill="#2dd4bf">
+    Aug 19 - Aug 25
+</text>
+
+</svg>
