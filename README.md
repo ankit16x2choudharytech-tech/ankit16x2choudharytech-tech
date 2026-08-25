@@ -452,7 +452,7 @@ GitHub
 <div align="center">
 
 <img
-  src="./profile/contributions.svg"
+  src="./profile/activity.svg"
   width="100%"
   alt="GitHub Contribution Activity"
 />
