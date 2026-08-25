@@ -1,0 +1,452 @@
+name: Update Contribution Activity Graph
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Generate Activity Graph
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+
+        run: |
+
+          python3 <<'PY'
+
+          import os
+          import json
+          import urllib.request
+          from datetime import datetime, timedelta
+          from xml.sax.saxutils import escape
+
+          username = os.environ["GITHUB_USERNAME"]
+          token = os.environ["GH_TOKEN"]
+
+          # ============================================
+          # GitHub GraphQL Query
+          # ============================================
+
+          query = """
+          query($login: String!) {
+            user(login: $login) {
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      date
+                      contributionCount
+                    }
+                  }
+                }
+              }
+            }
+          }
+          """
+
+          payload = json.dumps({
+              "query": query,
+              "variables": {
+                  "login": username
+              }
+          }).encode()
+
+          request = urllib.request.Request(
+              "https://api.github.com/graphql",
+              data=payload,
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Content-Type": "application/json",
+                  "User-Agent": "github-activity-graph"
+              }
+          )
+
+          with urllib.request.urlopen(request) as response:
+              result = json.loads(response.read())
+
+          if "errors" in result:
+              raise Exception(result["errors"])
+
+          calendar = (
+              result["data"]
+              ["user"]
+              ["contributionsCollection"]
+              ["contributionCalendar"]
+          )
+
+          # ============================================
+          # Flatten contribution days
+          # ============================================
+
+          days = []
+
+          for week in calendar["weeks"]:
+              for day in week["contributionDays"]:
+                  days.append({
+                      "date": day["date"],
+                      "count": day["contributionCount"]
+                  })
+
+          # Last 365 days
+          days = days[-365:]
+
+          total = sum(day["count"] for day in days)
+
+          # ============================================
+          # SVG CONFIG
+          # ============================================
+
+          WIDTH = 1100
+          HEIGHT = 330
+
+          LEFT = 65
+          RIGHT = 30
+          TOP = 70
+          BOTTOM = 55
+
+          GRAPH_WIDTH = WIDTH - LEFT - RIGHT
+          GRAPH_HEIGHT = HEIGHT - TOP - BOTTOM
+
+          max_count = max(
+              [day["count"] for day in days] + [1]
+          )
+
+          # ============================================
+          # SVG
+          # ============================================
+
+          svg = []
+
+          svg.append(
+              f'<svg xmlns="http://www.w3.org/2000/svg" '
+              f'width="{WIDTH}" height="{HEIGHT}" '
+              f'viewBox="0 0 {WIDTH} {HEIGHT}">'
+          )
+
+          svg.append("""
+          <defs>
+
+            <linearGradient id="areaGradient"
+              x1="0" y1="0"
+              x2="0" y2="1">
+
+              <stop
+                offset="0%"
+                stop-color="#06B6D4"
+                stop-opacity="0.35"/>
+
+              <stop
+                offset="100%"
+                stop-color="#06B6D4"
+                stop-opacity="0.02"/>
+
+            </linearGradient>
+
+            <filter
+              id="glow"
+              x="-50%"
+              y="-50%"
+              width="200%"
+              height="200%">
+
+              <feGaussianBlur
+                stdDeviation="3"
+                result="blur"/>
+
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+
+            </filter>
+
+          </defs>
+          """)
+
+          # ============================================
+          # Background
+          # ============================================
+
+          svg.append("""
+          <rect
+            width="100%"
+            height="100%"
+            rx="16"
+            fill="#0F172A"/>
+          """)
+
+          # ============================================
+          # Title
+          # ============================================
+
+          svg.append("""
+          <text
+            x="30"
+            y="34"
+            fill="#F8FAFC"
+            font-family="Arial, sans-serif"
+            font-size="22"
+            font-weight="700">
+            Contribution Activity
+          </text>
+          """)
+
+          svg.append(
+              f"""
+              <text
+                x="30"
+                y="56"
+                fill="#94A3B8"
+                font-family="Arial, sans-serif"
+                font-size="12">
+                {total} contributions in the last year
+              </text>
+              """
+          )
+
+          # ============================================
+          # Horizontal Grid
+          # ============================================
+
+          for i in range(5):
+
+              value = int(max_count * i / 4)
+
+              y = (
+                  TOP
+                  + GRAPH_HEIGHT
+                  - (GRAPH_HEIGHT * i / 4)
+              )
+
+              svg.append(
+                  f"""
+                  <line
+                    x1="{LEFT}"
+                    y1="{y}"
+                    x2="{WIDTH - RIGHT}"
+                    y2="{y}"
+                    stroke="#334155"
+                    stroke-width="1"
+                    opacity="0.35"/>
+                  """
+              )
+
+              svg.append(
+                  f"""
+                  <text
+                    x="18"
+                    y="{y + 4}"
+                    fill="#64748B"
+                    font-family="Arial, sans-serif"
+                    font-size="10">
+                    {value}
+                  </text>
+                  """
+              )
+
+          # ============================================
+          # Calculate graph points
+          # ============================================
+
+          points = []
+
+          for i, day in enumerate(days):
+
+              x = (
+                  LEFT
+                  + (i / max(len(days) - 1, 1))
+                  * GRAPH_WIDTH
+              )
+
+              y = (
+                  TOP
+                  + GRAPH_HEIGHT
+                  - (
+                      day["count"]
+                      / max_count
+                  )
+                  * GRAPH_HEIGHT
+              )
+
+              points.append((x, y))
+
+          # ============================================
+          # Area Path
+          # ============================================
+
+          area = []
+
+          first_x = points[0][0]
+
+          last_x = points[-1][0]
+
+          area.append(
+              f"M {first_x} {TOP + GRAPH_HEIGHT}"
+          )
+
+          for x, y in points:
+              area.append(f"L {x} {y}")
+
+          area.append(
+              f"L {last_x} {TOP + GRAPH_HEIGHT}"
+          )
+
+          area.append("Z")
+
+          svg.append(
+              f"""
+              <path
+                d="{' '.join(area)}"
+                fill="url(#areaGradient)"/>
+              """
+          )
+
+          # ============================================
+          # Line
+          # ============================================
+
+          line = []
+
+          for i, (x, y) in enumerate(points):
+
+              if i == 0:
+                  line.append(f"M {x} {y}")
+              else:
+                  line.append(f"L {x} {y}")
+
+          svg.append(
+              f"""
+              <path
+                d="{' '.join(line)}"
+                fill="none"
+                stroke="#06B6D4"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                filter="url(#glow)"/>
+              """
+          )
+
+          # ============================================
+          # Data Points
+          # ============================================
+
+          for i, (x, y) in enumerate(points):
+
+              count = days[i]["count"]
+
+              # Show only meaningful points
+              if count > 0:
+
+                  svg.append(
+                      f"""
+                      <circle
+                        cx="{x}"
+                        cy="{y}"
+                        r="2.8"
+                        fill="#38BDF8">
+                        <title>
+                          {escape(days[i]["date"])}
+                          : {count} contributions
+                        </title>
+                      </circle>
+                      """
+                  )
+
+          # ============================================
+          # X Axis Labels
+          # ============================================
+
+          previous_month = ""
+
+          for i, day in enumerate(days):
+
+              date = datetime.strptime(
+                  day["date"],
+                  "%Y-%m-%d"
+              )
+
+              month = date.strftime("%b")
+
+              if month != previous_month:
+
+                  x = (
+                      LEFT
+                      + (i / max(len(days) - 1, 1))
+                      * GRAPH_WIDTH
+                  )
+
+                  svg.append(
+                      f"""
+                      <text
+                        x="{x}"
+                        y="{HEIGHT - 25}"
+                        fill="#64748B"
+                        font-family="Arial, sans-serif"
+                        font-size="10">
+                        {month}
+                      </text>
+                      """
+                  )
+
+                  previous_month = month
+
+          # ============================================
+          # Close SVG
+          # ============================================
+
+          svg.append("</svg>")
+
+          # ============================================
+          # Save
+          # ============================================
+
+          os.makedirs("profile", exist_ok=True)
+
+          with open(
+              "profile/activity.svg",
+              "w",
+              encoding="utf-8"
+          ) as file:
+
+              file.write("\n".join(svg))
+
+          print(
+              f"Activity graph generated: {total} contributions"
+          )
+
+          PY
+
+      # ============================================
+      # Commit
+      # ============================================
+
+      - name: Commit Activity Graph
+        run: |
+
+          git config user.name "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/activity.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update contribution activity graph"
+            git push
+          fi
