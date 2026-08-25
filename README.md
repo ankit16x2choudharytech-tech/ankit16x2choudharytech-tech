@@ -330,7 +330,7 @@ Deployment
 
 <div align="center">
 
-<a href="https://leetcode.com/u/ankit16x2choudhary/">
+<a href="https://leetcode.com/u/ankit16x2choudhary/876768">
 
 <img src="https://img.shields.io/badge/LEETCODE-SOLVING%20PROBLEMS-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
 
