@@ -438,11 +438,11 @@ GitHub
 <br/>
 <br/>
 
-<!-- <img
+<img
   src="./profile/contributions.svg"
   width="70%"
   alt="GitHub Contribution Analytics"
-/> -->
+/> 
 
 </div>
 
