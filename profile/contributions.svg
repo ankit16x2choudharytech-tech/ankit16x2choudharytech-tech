@@ -26,7 +26,7 @@ aria-label="GitHub contribution analytics">
     font-size="52"
     font-weight="700"
     fill="#6ea8ff">
-    198
+    200
 </text>
 
 <text
@@ -46,9 +46,9 @@ aria-label="GitHub contribution analytics">
     font-family="Arial, Helvetica, sans-serif"
     font-size="18"
     fill="#2dd4bf">
-    Aug 31
+    Sep 7
     -
-    Sep 5
+    Sep 6
 </text>
 
 
@@ -87,7 +87,7 @@ aria-label="GitHub contribution analytics">
     stroke="#6ea8ff"
     stroke-width="10"
     stroke-linecap="round"
-    stroke-dasharray="129.25409774769435 323.13524436923586"
+    stroke-dasharray="0.0 452.3893421169302"
     transform="rotate(-90 450 126)"
 />
 
@@ -134,7 +134,7 @@ aria-label="GitHub contribution analytics">
     font-size="50"
     font-weight="700"
     fill="#c084fc">
-    2
+    0
 </text>
 
 <!-- ============================= -->
@@ -159,7 +159,7 @@ aria-label="GitHub contribution analytics">
     font-family="Arial, Helvetica, sans-serif"
     font-size="18"
     fill="#2dd4bf">
-    Sep 4 - Sep 5
+    No active streak
 </text>
 
 
